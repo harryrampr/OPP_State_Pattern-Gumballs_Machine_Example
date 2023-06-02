@@ -426,31 +426,57 @@ h1 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
-  margin-bottom: 0.75rem;
-  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 h2 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 h3 {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
   margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 li {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 0.25rem;
   margin-left: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.message {
+  font-style: italic;
+}
+
+.action {
+  padding-left: 0.75rem;
+}
+
+.monitor {
+  width: 27.5rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+
+.action + .monitor {
+  margin-top: 4rem;
 }
 
 *, ::before, ::after {
@@ -587,44 +613,6 @@ li {
   }
 }
 
-.static {
-  position: static;
-}
-
 .m-6 {
   margin: 1.5rem;
-}
-
-.contents {
-  display: contents;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
-.text-blue-700 {
-  --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity));
-}
-
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
-.text-green-600 {
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
 }

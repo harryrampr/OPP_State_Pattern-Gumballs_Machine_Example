@@ -3,14 +3,13 @@
     h1 {
         @apply text-2xl;
         @apply font-medium;
-        @apply mt-4;
-        @apply mb-2;
+        @apply mb-1;
     }
 
     h2 {
         @apply text-xl;
         @apply font-medium;
-        @apply mt-2;
+        @apply mt-1;
         @apply mb-1;
     }
 
@@ -29,9 +28,29 @@
 
     p {
         @apply text-base;
-        @apply mt-1;
-        @apply ml-2;
+    }
+
+    .message {
+        @apply italic;
+    }
+
+    .action {
+        @apply pl-3;
+    }
+
+    .monitor {
+        @apply w-[27.5rem];
+        @apply rounded-lg;
+        @apply bg-slate-200;
+        @apply mt-[2rem];
+        @apply mb-4;
+        @apply p-3;
+    }
+
+    .action + .monitor {
+        @apply mt-[4rem];
     }
 }
+
 @tailwind components;
 @tailwind utilities;
