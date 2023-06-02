@@ -74,8 +74,8 @@ states while maintaining their interface.
   protocol-specific behavior and transitions.
 
 - **Document Processing:** Applications that involve document processing, such as text editors or compilers, can use the
-  State pattern to handle different states of the document. For example, a text editor may have states like "
-  read-only," "editing," or "preview," with each state having its own behavior and restrictions.
+  State pattern to handle different states of the document. For example, a text editor may have states
+  like "read-only," "editing," or "preview," with each state having its own behavior and restrictions.
 
 - **Game Development:** Game development often utilizes the State pattern to manage the behavior of game entities or
   characters based on their current state. This allows for dynamic and context-sensitive behavior, such as different
