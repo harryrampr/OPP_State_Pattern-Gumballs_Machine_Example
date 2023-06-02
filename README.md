@@ -104,7 +104,7 @@ states while maintaining their interface.
 Consider a document editing application used in a real-life scenario. When you start creating a new document, it begins
 in a "Draft" state, allowing you to make changes and updates. Once you're satisfied with the document, you can submit it
 for review, transitioning it to the "Review" state. During the review process, others can provide feedback and
-suggestions, while you are restricted from making direct edits. After the document receives approval, it enters the "
-Published" state, becoming view-only and ready to be shared with others. The State pattern enables the application to
-seamlessly manage the document's different states, ensuring a smooth workflow and appropriate access restrictions at
+suggestions, while you are restricted from making direct edits. After the document receives approval, it enters
+the "Published" state, becoming view-only and ready to be shared with others. The State pattern enables the application
+to seamlessly manage the document's different states, ensuring a smooth workflow and appropriate access restrictions at
 each stage.
