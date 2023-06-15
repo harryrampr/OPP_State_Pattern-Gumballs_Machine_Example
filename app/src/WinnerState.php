@@ -83,6 +83,6 @@ class WinnerState implements State
      */
     public function refill(int $refill): void
     {
-        echo "<p class=\"action\"><p class=\"action\">Can't refill now</p>", PHP_EOL;
+        echo "<p class=\"action\">Can't refill now</p>", PHP_EOL;
     }
 }

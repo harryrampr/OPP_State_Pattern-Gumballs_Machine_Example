@@ -73,6 +73,6 @@ class NoQuarterState implements State
     public function refill(int $refill): void
     {
         $this->gumBallMachine->setCount($this->gumBallMachine->getCount() + $refill);
-        echo "<p class=\"action\"><p class=\"action\">A $refill gumballs refill was done</p>", PHP_EOL;
+        echo "<p class=\"action\">A $refill gumballs refill was done</p>", PHP_EOL;
     }
 }

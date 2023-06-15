@@ -40,6 +40,7 @@ class HasQuarterStateTest extends TestCase
             ],
         ];
 
+        $this->assertSame(count($expected), count($properties));
         foreach ($properties as $property) {
             $name = $property->getName();
             $this->assertArrayHasKey($name, $expected);
@@ -96,6 +97,7 @@ class HasQuarterStateTest extends TestCase
             ],
         ];
 
+        $this->assertSame(count($expected), count($methods));
         foreach ($methods as $method) {
             $name = $method->getName();
             $this->assertArrayHasKey($name, $expected);
@@ -215,4 +217,5 @@ class HasQuarterStateTest extends TestCase
         $this->expectOutputString("<p class=\"action\">Can't refill now</p>" . PHP_EOL);
         $hasQuarterState->refill(10);
     }
+
 }

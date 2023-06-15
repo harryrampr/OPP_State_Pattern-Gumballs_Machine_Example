@@ -72,7 +72,7 @@ class SoldOutState implements State
     public function refill(int $refill): void
     {
         $this->gumBallMachine->setCount($refill);
-        echo "<p class=\"action\"><p class=\"action\">A $refill gumballs refill was done</p>", PHP_EOL;
+        echo "<p class=\"action\">A $refill gumballs refill was done</p>", PHP_EOL;
         $this->gumBallMachine->setState($this->gumBallMachine->getNoQuarterState());
     }
 }

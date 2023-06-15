@@ -61,6 +61,7 @@ class GumBallMachineTest extends TestCase
             ],
         ];
 
+        $this->assertSame(count($expected), count($properties));
         foreach ($properties as $property) {
             $name = $property->getName();
             $this->assertArrayHasKey($name, $expected);
@@ -96,6 +97,10 @@ class GumBallMachineTest extends TestCase
                 'access' => 'public',
                 'return' => '',
             ],
+            'getWinnerState' => [
+                'access' => 'public',
+                'return' => 'App\State',
+            ],
             '__toString' => [
                 'access' => 'public',
                 'return' => 'string',
@@ -109,34 +114,6 @@ class GumBallMachineTest extends TestCase
                 'return' => 'void',
             ],
             'turnCrank' => [
-                'access' => 'public',
-                'return' => 'void',
-            ],
-            'dispense' => [
-                'access' => 'public',
-                'return' => 'void',
-            ],
-            'releaseBall' => [
-                'access' => 'public',
-                'return' => 'void',
-            ],
-            'getCount' => [
-                'access' => 'public',
-                'return' => 'int',
-            ],
-            'refill' => [
-                'access' => 'public',
-                'return' => 'void',
-            ],
-            'getState' => [
-                'access' => 'public',
-                'return' => 'App\State',
-            ],
-            'setState' => [
-                'access' => 'public',
-                'return' => 'void',
-            ],
-            'setCount' => [
                 'access' => 'public',
                 'return' => 'void',
             ],
@@ -156,12 +133,33 @@ class GumBallMachineTest extends TestCase
                 'access' => 'public',
                 'return' => 'App\State',
             ],
-            'getWinnerState' => [
+            'getState' => [
                 'access' => 'public',
                 'return' => 'App\State',
             ],
+            'setState' => [
+                'access' => 'public',
+                'return' => 'void',
+            ],
+            'getCount' => [
+                'access' => 'public',
+                'return' => 'int',
+            ],
+            'setCount' => [
+                'access' => 'public',
+                'return' => 'void',
+            ],
+            'refill' => [
+                'access' => 'public',
+                'return' => 'void',
+            ],
+            'releaseBall' => [
+                'access' => 'public',
+                'return' => 'void',
+            ],
         ];
 
+        $this->assertSame(count($expected), count($methods));
         foreach ($methods as $method) {
             $name = $method->getName();
             $this->assertArrayHasKey($name, $expected);
@@ -308,4 +306,5 @@ class GumBallMachineTest extends TestCase
         $this->assertSame(15, $gumBallMachine->getCount());
         $this->assertInstanceOf(NoQuarterState::class, $gumBallMachine->getState());
     }
+
 }
